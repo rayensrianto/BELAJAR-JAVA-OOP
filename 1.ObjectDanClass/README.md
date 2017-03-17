@@ -52,11 +52,6 @@ Keuntungan method adalah:
 - Code Reusability
 - Code Optimization
 
-
-### Object and Class Example: main within class (Contoh1)
-
-### Object and Class Example: main outside class (Contoh2)
-
 ### 3 Cara initialize object
 
 Initializing object adalah menyetorkan data, meletakan data atau memberikan data ke object. Kurang lebih seperti itu :D
