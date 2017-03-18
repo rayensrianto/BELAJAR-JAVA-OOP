@@ -126,7 +126,14 @@ class Aplikasi {
 - Kode di atas ada dua class, yaitu Murid dan Aplikasi.
 - Class Murid berisi dua instance variable yaitu id dan name, sedang class Aplikasi berisi main method.
 - Main method pada class Aplikasi, berisi pembuatan object bernama SMA dengan berbasis class Murid.
-- ```script Murid SMA = new Murid(); ```
+- ``` Murid SMA = new Murid(); ``` ini adalah code pembuatan object dengan nama SMA dan class Murid sebagai blueprint/cetakannya/resourcenya.
+-
+```
+SMA.id = 1012;
+SMA.name = "Darmaji";
+```
+Setelah SMA(Object) sudah di initialize, maka object SMA ini bisa mengakses dan memiliki resource yang ada di class Murid.
+- Hmm
 
 
 
