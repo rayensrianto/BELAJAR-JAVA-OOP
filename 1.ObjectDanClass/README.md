@@ -126,7 +126,7 @@ class Aplikasi {
 - Kode di atas ada dua class, yaitu Murid dan Aplikasi.
 - Class Murid berisi dua instance variable yaitu id dan name, sedang class Aplikasi berisi main method.
 - Main method pada class Aplikasi, berisi pembuatan object bernama SMA dengan berbasis class Murid.
-
+- ```script Murid SMA = new Murid(); ```
 
 
 
