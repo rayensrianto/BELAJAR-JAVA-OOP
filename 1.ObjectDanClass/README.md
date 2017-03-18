@@ -52,11 +52,86 @@ Keuntungan method adalah:
 - Code Reusability
 - Code Optimization
 
-### 3 Cara initialize object
+### Cara initialize object
 
 Initializing object adalah menyetorkan data, meletakan data atau memberikan data ke object. Kurang lebih seperti itu :D
 Versi english nya: Initializing object simply means storing data into object.
+- By refeterence variable
+- By method
+- By constructor
 
-#### 1. By refeterence variable
-#### 2. By method
-#### 3. By constructor
+### 1.object-class-main-within-class
+
+```java
+public class Murid {
+
+  int id;
+  String name;
+
+  public static void main(String[] args) {
+    Murid SD = new Murid();
+    System.out.println(SD.id);
+    System.out.println(SD.name);
+  }
+
+}
+```
+
+
+### 2.object-class-main-outside-class
+```java
+class Murid {
+
+  int id;
+  String name;
+
+}
+
+class Aplikasi {
+
+  public static void main(String[] args) {
+
+    Murid SMP = new Murid();
+    System.out.println(SMP.id);
+    System.out.println(SMP.name);
+
+  }
+
+}
+```
+
+### 3.object-by-variable
+```java
+class Murid {
+
+  int id;
+  String name;
+
+}
+
+class Aplikasi {
+
+  public static void main(String[] args) {
+
+    Murid SMA = new Murid();
+    SMA.id = 1012;
+    SMA.name = "Darmaji";
+    System.out.println("ID : "+SMA.id);
+    System.out.println("Name :"+SMA.name);
+
+  }
+
+}
+```
+- Kode di atas ada dua class, yaitu Murid dan Aplikasi.
+- Class Murid berisi dua instance variable yaitu id dan name, sedang class Aplikasi berisi main method.
+- Main method pada class Aplikasi, berisi pembuatan object bernama SMA dengan berbasis class Murid.
+
+
+
+
+### 4.object-by-variable-2
+### 5.object-by-method
+### 6.ObjectAndClass-sample1
+### 7.ObjectAndClass-sample2
+### 8.ObjectAndClass-sample3
