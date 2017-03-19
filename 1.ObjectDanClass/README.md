@@ -76,8 +76,13 @@ public class Murid {
 
 }
 ```
-
-
+- Di atas adalah contoh pembuatan object di dalam class.
+- Object bernama SD di buat di dalam method main, dan method main ini berada di dalam class Murid.
+```
+output:
+0
+null
+```
 ### 2.object-class-main-outside-class
 ```java
 class Murid {
@@ -99,6 +104,7 @@ class Aplikasi {
 
 }
 ```
+
 
 ### 3.object-by-variable
 ```java
@@ -123,19 +129,23 @@ class Aplikasi {
 
 }
 ```
+- Kode di atas adalah contoh object memanggil variable.
 - Kode di atas ada dua class, yaitu Murid dan Aplikasi.
 - Class Murid berisi dua instance variable yaitu id dan name, sedang class Aplikasi berisi main method.
 - Main method pada class Aplikasi, berisi pembuatan object bernama SMA dengan berbasis class Murid.
 - ``` Murid SMA = new Murid(); ``` ini adalah code pembuatan object dengan nama SMA dan class Murid sebagai blueprint/cetakannya/resourcenya.
 -
+Setelah SMA(Object) sudah di initialize, maka object SMA ini bisa mengakses dan memiliki resource yang ada di class Murid.
+Kode dibawah ini adalah, SMA memanggil instance variable id dari class Murid(ya karna memang SMA ini object dari class Murid, jadi manggil nya resource yang di class Murid), setelah itu memberikan nilai pada variable id dengan nilai 1012. Begitu juga saat memberikan nilai Darmaji ke instance variable name.
 ```
 SMA.id = 1012;
 SMA.name = "Darmaji";
 ```
-Setelah SMA(Object) sudah di initialize, maka object SMA ini bisa mengakses dan memiliki resource yang ada di class Murid.
-- Hmm
-
-
+- Setelah variable id dan name di panggil dan isi sebuah data/nilai oleh object SMA, maka jika di print, sudah ada hasil nya.
+```
+System.out.println("ID : "+SMA.id);
+System.out.println("Name :"+SMA.name);
+```
 
 ### 4.object-by-variable-2
 ### 5.object-by-method

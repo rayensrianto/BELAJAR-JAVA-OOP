@@ -37,12 +37,12 @@ class Akun {
 public class TestAkun {
   public static void main(String[] args) {
     Akun darmaji = new Akun();
-    darmaji.insertData(101, "Darmaji", 1000000);
+    darmaji.insertData(101, "Darmaji", 1000);
     darmaji.tampilAkun();
     darmaji.cekSaldo();
-    darmaji.simpanUang(50000);
+    darmaji.simpanUang(500);
     darmaji.cekSaldo();
-    darmaji.ambilUang(125000);
+    darmaji.ambilUang(900);
     darmaji.cekSaldo();
   }
 }
