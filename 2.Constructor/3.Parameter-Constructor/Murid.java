@@ -1,6 +1,5 @@
 class Murid {
-
-  int id; 
+  int id;
   String name;
 
   Murid(int i, String n) {
@@ -18,5 +17,4 @@ class Murid {
     obj1.tampil();
     obj2.tampil();
   }
-
 }

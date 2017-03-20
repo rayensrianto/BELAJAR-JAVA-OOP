@@ -1,5 +1,4 @@
 class Murid {
-
   int id;
   String name;
   int age;
@@ -20,12 +19,9 @@ class Murid {
   }
 
   public static void main(String[] args) {
-
     Murid obj1 = new Murid(111, "Naruto");
     Murid obj2 = new Murid(222, "Sakura", 16);
     obj1.tampil();
     obj2.tampil();
-
   }
-
 }

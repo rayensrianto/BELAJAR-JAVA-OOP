@@ -1,5 +1,4 @@
 class Karyawan {
-
   int id;
   String nama;
   float gaji;
@@ -13,13 +12,10 @@ class Karyawan {
   void tampilData() {
     System.out.println(id+" "+nama+" "+gaji);
   }
-
 }
 
 public class TestKaryawan {
-
   public static void main(String[] args) {
-
     Karyawan k1 = new Karyawan();
     Karyawan k2 = new Karyawan();
 
@@ -28,9 +24,7 @@ public class TestKaryawan {
 
     k1.tampilData();
     k2.tampilData();
-
   }
-
 }
 
 /*

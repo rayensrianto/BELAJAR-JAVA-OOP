@@ -1,5 +1,4 @@
 class Murid {
-
   int id;
   String name;
 
@@ -11,14 +10,10 @@ class Murid {
   void tampilkanData() {
     System.out.println(id+" "+name);
   }
-
 }
 
-
 public class Aplikasi {
-
   public static void main(String[] args) {
-
     Murid SMP = new Murid();
     SMP.insertData(123, "Naruto");
     SMP.tampilkanData();

@@ -1,5 +1,4 @@
 class Akun {
-
   int noAkun;
   String nama;
   float jumlah;

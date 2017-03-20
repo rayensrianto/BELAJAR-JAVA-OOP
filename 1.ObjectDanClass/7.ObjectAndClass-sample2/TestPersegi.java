@@ -1,5 +1,4 @@
 class Persegi {
-
   int panjang;
   int lebar;
 

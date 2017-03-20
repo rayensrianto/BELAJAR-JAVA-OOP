@@ -27,3 +27,10 @@ public class Main {
     System.out.println("Counter milik obj3 = "+obj3.getCounter());
   }
 }
+/*
+output:
+Counter milik obj1 = 2
+Counter milik obj2 = 1
+Counter milik obj3 = 1
+
+*/

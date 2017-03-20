@@ -104,7 +104,14 @@ class Aplikasi {
 
 }
 ```
-
+- Di atas adalah contoh pembuatan object di luar class.
+- Terdapat dua class yaitu Murid dan Aplikasi, class Murid berisi instance variable id dan name sedang class Aplikasi berisi main method dan pembuatan object.
+- Object bernama SMP di buat di class Aplikasi dan class Murid sebagai base/blueprint nya.
+```
+output:
+0
+null
+```
 
 ### 3.object-by-variable
 ```java
@@ -145,10 +152,184 @@ SMA.name = "Darmaji";
 ```
 System.out.println("ID : "+SMA.id);
 System.out.println("Name :"+SMA.name);
+
+output:
+
+ID : 1012
+Name :Darmaji
 ```
 
 ### 4.object-by-variable-2
+```java
+class Murid {
+  int id;
+  String name;
+
+}
+
+class Aplikasi {
+  public static void main(String[] args) {
+    Murid SMA = new Murid();
+    Murid SMP = new Murid();
+    SMA.id = 1012;
+    SMA.name = "Darmaji";
+    System.out.println("Anak SMA");
+    System.out.println("ID : "+SMA.id);
+    System.out.println("Name :"+SMA.name);
+
+    SMP.id = 1013;
+    SMP.name = "Darmanto";
+    System.out.println("Anak SMP");
+    System.out.println("ID : "+SMP.id);
+    System.out.println("Name :"+SMP.name);
+  }
+}
+```
+- Di atas contoh pembuatan object lebih dari satu.
+
 ### 5.object-by-method
+```java
+class Murid {
+  int id;
+  String name;
+
+  void insertData(int i, String n) {
+    id = i;
+    name = n;
+  }
+
+  void tampilkanData() {
+    System.out.println(id+" "+name);
+  }
+}
+
+public class Aplikasi {
+  public static void main(String[] args) {
+    Murid SMP = new Murid();
+    SMP.insertData(123, "Naruto");
+    SMP.tampilkanData();
+
+  }
+
+}
+```
+- Di atas adalah contoh object memanggil method class.
+- Object SMP memanggil method insertData lalu memasukan nilai melalui parameter.
+- dan tampilkanData dari class Murid menampilkan nilai yang di masukan oleh object SMP tadi.
+```
+output:
+123 Naruto
+```
+
 ### 6.ObjectAndClass-sample1
+```java
+class Karyawan {
+  int id;
+  String nama;
+  float gaji;
+
+  void insertData(int i, String n, float g) {
+    id = i;
+    nama = n;
+    gaji = g;
+  }
+
+  void tampilData() {
+    System.out.println(id+" "+nama+" "+gaji);
+  }
+}
+
+public class TestKaryawan {
+  public static void main(String[] args) {
+    Karyawan k1 = new Karyawan();
+    Karyawan k2 = new Karyawan();
+
+    k1.insertData(111, "Darmaji", 300000);
+    k2.insertData(222, "Darmanto", 400000);
+
+    k1.tampilData();
+    k2.tampilData();
+  }
+}
+```
 ### 7.ObjectAndClass-sample2
+```java
+class Persegi {
+  int panjang;
+  int lebar;
+
+  void insertData(int p, int l) {
+    panjang = p;
+    lebar = l;
+  }
+
+  void luasPersegi() {
+    System.out.println(panjang*lebar);
+  }
+
+}
+
+public class TestPersegi {
+  public static void main(String[] args) {
+
+    Persegi kotak1 = new Persegi();
+    Persegi kotak2 = new Persegi();
+    kotak1.insertData(5,5);
+    kotak2.insertData(7,7);
+
+    kotak1.luasPersegi();
+    kotak2.luasPersegi();
+
+  }
+}
+```
 ### 8.ObjectAndClass-sample3
+```java
+class Akun {
+  int noAkun;
+  String nama;
+  float jumlah;
+
+  void insertData(int no, String nm, float jml) {
+    noAkun = no;
+    nama = nm;
+    jumlah = jml;
+  }
+
+  void simpanUang(float jml) {
+    jumlah = jumlah + jml;
+    System.out.println(jml+" tersimpan");
+  }
+
+  void ambilUang(float jml) {
+    if(jumlah < jml) {
+      System.out.println("Saldo tidak cukup");
+    } else {
+      jumlah = jumlah - jml;
+      System.out.println(jml + " diambil");
+    }
+  }
+
+  void cekSaldo() {
+    System.out.println("Saldo : "+jumlah);
+  }
+
+  void tampilAkun() {
+    System.out.println(noAkun+" "+nama+" "+jumlah);
+  }
+
+}
+
+public class TestAkun {
+  public static void main(String[] args) {
+    Akun darmaji = new Akun();
+    darmaji.insertData(101, "Darmaji", 1000);
+    darmaji.tampilAkun();
+    darmaji.cekSaldo();
+    darmaji.simpanUang(500);
+    darmaji.cekSaldo();
+    darmaji.ambilUang(900);
+    darmaji.cekSaldo();
+  }
+}
+```

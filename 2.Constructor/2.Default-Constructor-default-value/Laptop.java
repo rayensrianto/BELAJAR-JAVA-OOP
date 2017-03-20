@@ -1,5 +1,4 @@
 public class Laptop {
-
   int nomor;
   String merk;
 

@@ -17,3 +17,9 @@ class Contoh {
 
   }
 }
+
+/*
+output:
+Hello A
+10
+*/

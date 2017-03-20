@@ -28,3 +28,11 @@ public class Main {
     System.out.println("Counter milik class = "+Test.counter);
   }
 }
+
+/*
+OUTPUT:
+Counter milik obj1 = 4
+Counter milik obj2 = 4
+Counter milik obj3 = 4
+Counter milik class = 4
+*/
